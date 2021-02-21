@@ -28,6 +28,11 @@ export default function Layout({ children }) {
 
         html {
           font: 100%/1.5 system-ui;
+          max-height: 100vh;
+          height: 100vh;
+          overflow-y: hidden;
+          overflow-x: hidden;
+
           background-color: #121212;
         }
 
