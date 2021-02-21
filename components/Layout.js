@@ -4,7 +4,13 @@ export default function Layout({ children }) {
       <div className="wrapper">{children}</div>
       <style jsx>{`
         .wrapper {
-          max-width: 36rem;
+          display: flex;
+          min-height: 100vh;
+          min-width: 100vw;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          max-width: 800px;
           margin: 0 auto;
           padding: 1.5rem;
         }
@@ -22,6 +28,7 @@ export default function Layout({ children }) {
 
         html {
           font: 100%/1.5 system-ui;
+          background-color: #121212;
         }
 
         a {
@@ -35,6 +42,19 @@ export default function Layout({ children }) {
           text-decoration-color: currentcolor;
         }
 
+        h1 {
+          background-color: green;
+
+          background-image: linear-gradient(60deg, #81e6d9, #a17fe0);
+
+          background-size: 100%;
+          background-repeat: repeat;
+
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          -moz-background-clip: text;
+          -moz-text-fill-color: transparent;
+        }
         h1,
         p {
           margin-bottom: 1.5rem;
@@ -45,5 +65,5 @@ export default function Layout({ children }) {
         }
       `}</style>
     </>
-  )
+  );
 }
