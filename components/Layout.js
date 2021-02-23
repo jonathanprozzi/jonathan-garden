@@ -60,6 +60,19 @@ export default function Layout({ children }) {
           -moz-background-clip: text;
           -moz-text-fill-color: transparent;
         }
+        h2 {
+          background-color: green;
+
+          background-image: linear-gradient(60deg, #a17fe0, #81e6d9, #a17fe0);
+
+          background-size: 100%;
+          background-repeat: repeat;
+
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          -moz-background-clip: text;
+          -moz-text-fill-color: transparent;
+        }
         h1,
         p {
           margin-bottom: 1.5rem;

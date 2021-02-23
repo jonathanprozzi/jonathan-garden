@@ -9,6 +9,7 @@ export default function Index({ posts }) {
   return (
     <Layout>
       <h1>🌱 jonathan prozzi's digital garden: sprouting soon 🌱</h1>
+      <h2>musician, learner, educator, technologist</h2>
     </Layout>
   );
 }
